@@ -30,7 +30,7 @@ html(lang=config.language data-theme=theme.display_mode class=htmlClassHideAside
 
       - const footerBg = theme.footer_img
       - const footer_bg = footerBg ? footerBg === true ? bg_img : getBgPath(footerBg) : ''
-      footer#footer(style=footer_bg)
+      footer#footer(style='background: transparent')
         !=partial('includes/footer', {}, {cache: true})
 
     include ./rightside.pug
