@@ -1104,3 +1104,59 @@ CDN:
     # valine:
     # waline_css:
     # waline_js:
+
+footer_group:
+    enable: true
+    footer_group_link:
+      - group_title: 直达
+        footer_links:
+          - text: 空间说说
+            link: /zone/
+            class: in
+      - group_title: 关于
+        footer_links:
+          - text: 关于我
+            link: /about/
+            class: in
+      - group_title: 分类
+        footer_links:
+          - text: 实用教程
+            link: /categories/实用教程
+            class: in
+  footer_friend_links:
+    enable: false
+    number: 5
+  footer_about_me:
+    enable: true
+    title: 关于我
+    description: >
+      我是一个高二的抑郁症患者，正在康复的路上。喜欢钻研各种技术，
+      比如Web开发和虚拟化，希望通过写博客记录成长和分享知识。
+  footer_bottom:
+    copyright:
+      enable: true
+      author: Hao
+      link: https://www.ougot.cn/
+      time: 2025
+    left:
+      - text: 基于 Vercel & CDN
+        desrc: 部署
+        link: https://Vercel.com
+      - text: Cloudflare CDN
+        desrc: CDN 网络分发
+        link: https://www.cloudflare.com
+    right:
+      - text: Hexo
+        desrc: 框架
+        link: https://hexo.io/zh-cn/
+      - text: Github CodeSpace
+        desrc: 代码托管&编辑
+        link: https://github.com/features/codespaces
+      - text: VisualStudio
+        desrc: 代码编辑
+        link: https://code.VisualStudio.com
+    runtime:
+      enable: true
+      time: 2024/10/13 00:00:00
+  footer_css: https://cdn.jsdelivr.net/gh/multuslove/JavaScript/css/footer.css
+  footer_js: https://cdn.jsdelivr.net/gh/multuslove/JavaScript/js/runtime.js
