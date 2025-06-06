@@ -1105,7 +1105,38 @@ CDN:
     # waline_css:
     # waline_js:
 
-footer_group:
+footer_beautify:
+  enable: true
+  priority: 5
+  enable_page: all
+  layout:
+    type: id
+    name: footer
+    index: 1
+  footer_icons:
+    enable: true
+    left:
+      - icon: fa-brands fa-qq
+        link: https://res.abeim.cn/api/qq/?qq=366247714
+        desrc: QQ
+        class: out
+      - icon: fa-solid fa-envelope
+        link: mailto:366247714@qq.com
+        desrc: 邮件
+        class: out
+    right:
+      - icon: fa-brands fa-github
+        link: https://github.com/multuslove
+        desrc: Github
+        class: out
+      - icon: fa-brands fa-bilibili
+        link: https://space.bilibili.com/526570030
+        desrc: 哔哩哔哩主页
+        class: out
+  footer_logo:
+    enable: true
+    url: https://cdn.jsdelivr.net/gh/multuslove/JavaScript/photo/xinxin.jpg
+  footer_group:
     enable: true
     footer_group_link:
       - group_title: 直达
