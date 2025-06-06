@@ -45,8 +45,10 @@ code_blocks:
 # Formal:
 #   icon: link || the description || color
 social:
-  # fab fa-github: https://github.com/xxxxx || Github || '#24292e'
-  # fas fa-envelope: mailto:xxxxxx@gmail.com || Email || '#4a7dbe'
+  fab fa-github: https://github.com/multuslove || Github || '#24292e'
+  fas fa-envelope: mailto:multuslover@outlook.com || Email || '#4a7dbe'
+  fab fa-bilibili: https://space.bilibili.com/526570030  || Bilibili || '#fb7299'
+  fab fa-qq: tencent://message/?uin=366247714&Site=&Menu=yes || QQ || '#12b7f5'
 
 # --------------------------------------
 # Image Settings
@@ -55,7 +57,7 @@ social:
 favicon: /img/favicon.png
 
 avatar:
-  img: /img/butterfly-icon.png
+  img: https://cdn.jsdelivr.net/gh/multuslove/JavaScript/photo/xinxin.jpg
   effect: false
 
 # Disable all banner images
@@ -281,7 +283,7 @@ aside:
     enable: true
     description:
     button:
-      enable: true
+      enable: false
       icon: fab fa-github
       text: Follow Me
       link: https://github.com/xxxxxx
