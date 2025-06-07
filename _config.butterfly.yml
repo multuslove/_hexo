@@ -288,8 +288,10 @@ aside:
       text: Follow Me
       link: https://github.com/xxxxxx
   card_announcement:
-    enable: true
-    content: This is my Blog
+          enable: true
+          content: |
+            <span><i class="fa-brands fa-cloudflare"></i> 国际站点: <a href="https://intl.ourgot.cn" target="_blank">intl.ourgot.cn</a></span><br>
+            <span><i class="fa-brands fa-vercel"></i> 国内站点: <a href="https://www.ourgot.cn" target="_blank">www.ourgot.cn</a></span>
   card_recent_post:
     enable: true
     # If set 0 will show all
@@ -1191,3 +1193,5 @@ footer_beautify:
       time: 2024/10/13 00:00:00
   footer_css: https://cdn.jsdelivr.net/gh/multuslove/JavaScript/css/footer.css
   footer_js: https://cdn.jsdelivr.net/gh/multuslove/JavaScript/js/runtime.js
+
+
