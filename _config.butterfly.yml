@@ -1026,6 +1026,7 @@ inject:
   head:
     - <link rel="stylesheet" href="/css/readPercent.css">
     - <link rel="stylesheet" href="/css/universe.css">
+    - <link rel="stylesheet" href="/css/transparent.css">
   bottom:
     - <script defer data-pjax src="/js/readPercent.js"></script>
     - <canvas id="universe"></canvas>
