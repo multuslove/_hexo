@@ -290,8 +290,9 @@ aside:
   card_announcement:
           enable: true
           content: |
-            <span><i class="fa-brands fa-cloudflare"></i> 国际站点: <a href="https://intl.ourgot.cn" target="_blank">intl.ourgot.cn</a></span><br>
-            <span><i class="fa-brands fa-vercel"></i> 国内站点: <a href="https://www.ourgot.cn" target="_blank">www.ourgot.cn</a></span>
+            {% span red, <a href="https://dash.cloudflare.com/" target="_blank">Cloudflare</a> %}
+            {% span blue, <a href="https://vercel.com/" target="_blank">Vercel</a> %}
+
   card_recent_post:
     enable: true
     # If set 0 will show all
