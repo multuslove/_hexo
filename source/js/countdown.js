@@ -1,13 +1,40 @@
 const CountdownTimer = (() => {
     const config = {
         targetDate: "2027-06-07",
-        targetName: "高考",
+        targetName: "2027届高考",
         units: {
+            day: { text: "今日", unit: "小时" },
+            week: { text: "本周", unit: "天" },
+            month: { text: "本月", unit: "天" },
             year: { text: "本年", unit: "天" }
         }
     };
 
     const calculators = {
+        day: () => {
+            const hours = new Date().getHours();
+            return {
+                remaining: 24 - hours,
+                percentage: (hours / 24) * 100
+            };
+        },
+        week: () => {
+            const day = new Date().getDay();
+            const passed = day === 0 ? 6 : day - 1;
+            return {
+                remaining: 6 - passed,
+                percentage: ((passed + 1) / 7) * 100
+            };
+        },
+        month: () => {
+            const now = new Date();
+            const total = new Date(now.getFullYear(), now.getMonth() + 1, 0).getDate();
+            const passed = now.getDate() - 1;
+            return {
+                remaining: total - passed,
+                percentage: (passed / total) * 100
+            };
+        },
         year: () => {
             const now = new Date();
             const start = new Date(now.getFullYear(), 0, 1);
@@ -19,34 +46,20 @@ const CountdownTimer = (() => {
             };
         }
     };
-    // 已移除本年进度相关代码
-    // 不再显示本年进度和本年已过
 
-    // 移除 config.units 和 calculators.year 相关内容
-    delete config.units;
-    delete calculators.year;
-
-    // 移除 updateCountdown 中本年进度相关的代码
-    // 你需要手动删除如下内容：
-    // const yearProgress = calculators.year();
-    // const yearElement = document.getElementById('yearProgress');
-    // if (yearElement) {
-    //     yearElement.textContent = `本年已过 ${(yearProgress.percentage).toFixed(2)}%，还剩 ${yearProgress.remaining} 天`;
-    // }
-
-    // 以及 countRight.innerHTML 相关的 Object.entries(config.units) ... 这一整段
     function updateCountdown() {
         const elements = ['eventName', 'eventDate', 'daysUntil', 'countRight']
             .map(id => document.getElementById(id));
-
+        
+        if (elements.some(el => !el)) return;
+        
         const [eventName, eventDate, daysUntil, countRight] = elements;
         const now = new Date();
         const target = new Date(config.targetDate);
-        const today = new Date(now.getFullYear(), now.getMonth(), now.getDate());
         
         eventName.textContent = config.targetName;
         eventDate.textContent = config.targetDate;
-        daysUntil.textContent = Math.round((target - today) / 86400000);
+        daysUntil.textContent = Math.round((target - now.setHours(0,0,0,0)) / 86400000);
         
         countRight.innerHTML = Object.entries(config.units)
             .map(([key, {text, unit}]) => {
@@ -90,7 +103,7 @@ const CountdownTimer = (() => {
             .cd-count-left .cd-time {
                 font-size: 30px;
                 font-weight: bold;
-                color: var(--multuslove-main);
+                color: var(--anzhiyu-main);
             }
             .cd-count-left .cd-date {
                 font-size: 12px;
@@ -102,7 +115,7 @@ const CountdownTimer = (() => {
                 right: -0.8rem;
                 width: 2px;
                 height: 80%;
-                background-color: var(--multuslove-main);
+                background-color: var(--anzhiyu-main);
                 opacity: 0.5;
             }
             .cd-count-right {
@@ -132,13 +145,13 @@ const CountdownTimer = (() => {
                 height: 100%;
                 width: 100%;
                 border-radius: 8px;
-                background-color: var(--multuslove-background);
+                background-color: var(--anzhiyu-background);
                 overflow: hidden;
             }
             .cd-progress-bar {
                 height: 100%;
                 border-radius: 8px;
-                background-color: var(--multuslove-main);
+                background-color: var(--anzhiyu-main);
             }
             .cd-percentage,
             .cd-remaining {
