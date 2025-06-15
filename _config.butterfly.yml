@@ -275,7 +275,7 @@ aside:
   button: true
   mobile: true
   # Position: left / right
-  position: right
+  position: left
   display:
     archive: true
     tag: true
@@ -291,10 +291,10 @@ aside:
   card_announcement:
           enable: true
           content: |
-            <span><i class="fa-brands fa-cloudflare"></i> 国际站点: <a href="https://intl.ourgot.cn" target="_blank">intl.ourgot.cn</a></span><br>
-            <span><i class="fa-brands fa-vercel"></i> 国内站点: <a href="https://www.ourgot.cn" target="_blank">www.ourgot.cn</a></span>
+            <span><i class="fa-brands fa-cloudflare"></i> 国际站: <a href="https://intl.ourgot.cn" target="_blank">intl.ourgot.cn</a></span><br>
+            <span><i class="fa-brands fa-cloudflare"></i> 国内站: <a href="https://www.ourgot.cn" target="_blank">www.ourgot.cn</a></span>
   card_recent_post:
-    enable: true
+    enable: false
     # If set 0 will show all
     limit: 5
     # Sort: date / updated
@@ -308,14 +308,14 @@ aside:
     storage: 10
     avatar: true
   card_categories:
-    enable: true
+    enable: false
     # If set 0 will show all
     limit: 8
     # Choose: none / true / false
     expand: none
     sort_order:
   card_tags:
-    enable: true
+    enable: false
     # If set 0 will show all
     limit: 40
     color: false
@@ -325,7 +325,7 @@ aside:
     order: 1
     sort_order:
   card_archives:
-    enable: true
+    enable: false
     # Type: monthly / yearly
     type: monthly
     # Eg: YYYY年MM月
@@ -336,7 +336,7 @@ aside:
     limit: 8
     sort_order:
   card_post_series:
-    enable: true
+    enable: false
     # The title shows the series name
     series_title: false
     # Order by title or date
@@ -344,7 +344,7 @@ aside:
     # Sort of order. 1, asc for ascending; -1, desc for descending
     order: -1
   card_webinfo:
-    enable: true
+    enable: false
     post_count: true
     last_push_date: true
     sort_order:
