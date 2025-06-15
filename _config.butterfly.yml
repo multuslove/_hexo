@@ -67,7 +67,7 @@ disable_top_img: false
 default_top_img:
 
 # The banner image of index page
-index_img:
+index_img: https://res.060912.xyz/bg1.webp
 
 # The banner image of archive page
 archive_img:
@@ -149,7 +149,7 @@ index_top_img_height:
 
 # The subtitle on homepage
 subtitle:
-  enable: false
+  enable: true
   # Typewriter Effect
   effect: true
   # Customize typed.js
@@ -165,7 +165,8 @@ subtitle:
   source: false
   # If you close the typewriter effect, the subtitle will only show the first line of sub
   sub:
-
+    - 不惧将来，不念过往 
+    - 生命在于运动，幸福源于奋斗
 # Article layout on the homepage
 # 1: Cover on the left, info on the right
 # 2: Cover on the right, info on the left
@@ -361,7 +362,7 @@ rightside_bottom:
 
 # Conversion between Traditional and Simplified Chinese
 translate:
-  enable: false
+  enable: true
   # The text of a button
   default: 繁
   # the language of website (1 - Traditional Chinese/ 2 - Simplified Chinese）
@@ -1034,6 +1035,7 @@ inject:
     - <link rel="stylesheet" href="/css/universe.css">
     - <link rel="stylesheet" href="/css/transparent.css">
     - <link rel="stylesheet" href="/css/cardinfo.css">
+    - <link rel="stylesheet" href="/css/fonts.css">
   bottom:
     - <script defer data-pjax src="/js/readPercent.js"></script>
     - <canvas id="universe"></canvas>

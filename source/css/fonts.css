@@ -1,0 +1,14 @@
+@font-face {
+    font-family: 'main';
+    src: url('https://res.060912.xyz/MiSans-Medium.subset.woff2');
+    font-display: swap;
+}
+h1#site-title {
+    font-family: 'main' !important;
+}
+span#subtitle {
+    font-family: 'main' !important;
+}
+a#site-name {
+    font-family: 'main' !important;
+}
