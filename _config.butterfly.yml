@@ -11,7 +11,7 @@
 
 nav:
   # Navigation bar logo image
-  logo:
+  logo: https://res.060912.xyz/xinxin_64x64_01_c.webp
   display_title: true
   # Whether to fix navigation bar
   fixed: false
@@ -54,10 +54,10 @@ social:
 # Image Settings
 # --------------------------------------
 
-favicon: /img/favicon.png
+favicon: /webp/xinxin_64x64_01_c.webp
 
 avatar:
-  img: https://cdn.jsdelivr.net/gh/multuslove/JavaScript/photo/xinxin.jpg
+  img: https://res.060912.xyz/xinxin_origin_c.webp
   effect: false
 
 # Disable all banner images
@@ -1144,7 +1144,7 @@ footer_beautify:
         class: out
   footer_logo:
     enable: true
-    url: https://cdn.jsdelivr.net/gh/multuslove/JavaScript/photo/xinxin.jpg
+    url: https://res.060912.xyz/xinxin_origin_c.webp
   footer_group:
     enable: true
     footer_group_link:
@@ -1200,5 +1200,3 @@ footer_beautify:
       time: 2024/10/13 00:00:00
   footer_css: https://cdn.jsdelivr.net/gh/multuslove/JavaScript/css/footer.css
   footer_js: https://cdn.jsdelivr.net/gh/multuslove/JavaScript/js/runtime.js
-
-
