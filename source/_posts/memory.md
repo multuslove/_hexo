@@ -1,10 +1,13 @@
 ---
-layout: layout
+layout: page
 title: memory
+comments: true
 date: 2025-06-05 14:05:29
 tags: memory
 categories: memory
-description: 总述
+description: 如果你想了解我以往的故事，点击此选项卡即可跳转
+swiper_index: 100 #置顶轮播图顺序，非负整数，数字越大越靠前
+
 ---
 
 # 两年前的故事

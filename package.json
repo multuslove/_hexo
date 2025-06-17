@@ -15,6 +15,7 @@
     "@upupming/hexo-renderer-markdown-it-plus": "^2.0.2",
     "hexo": "^7.3.0",
     "hexo-butterfly-footer-marcus": "^1.1.4",
+    "hexo-butterfly-swiper": "^1.0.12",
     "hexo-butterfly-tag-plugins-plus": "^1.0.18",
     "hexo-deployer-git": "^4.0.0",
     "hexo-generator-archive": "^2.0.0",
