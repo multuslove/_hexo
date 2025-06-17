@@ -62,7 +62,7 @@ avatar:
   effect: false
 
 # Disable all banner images
-disable_top_img: false
+disable_top_img: true
 
 # If the banner of page not setting, it will show the default_top_img
 default_top_img:
@@ -98,7 +98,7 @@ background: https://res.060912.xyz/bg1.webp
 
 cover:
   # Disable the cover or not
-  index_enable: true
+  index_enable: false
   aside_enable: true
   archives_enable: true
   # When cover is not set, the default cover is displayed
